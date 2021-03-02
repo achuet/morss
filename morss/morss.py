@@ -42,10 +42,10 @@ except ImportError:
     from urllib.parse import urlparse, urljoin, parse_qs
 
 
-MAX_ITEM = int(os.getenv('MAX_ITEM', 5)) # cache-only beyond
+MAX_ITEM = int(os.getenv('MAX_ITEM', 2)) # cache-only beyond
 MAX_TIME = int(os.getenv('MAX_TIME', 2)) # cache-only after (in sec)
 
-LIM_ITEM = int(os.getenv('LIM_ITEM', 10)) # deletes what's beyond
+LIM_ITEM = int(os.getenv('LIM_ITEM', 20)) # deletes what's beyond
 LIM_TIME = int(os.getenv('LIM_TIME', 2.5)) # deletes what's after
 
 DELAY = int(os.getenv('DELAY', 10 * 60)) # xml cache & ETag cache (in sec)
